@@ -1,0 +1,11 @@
+﻿@model CookieTracker.Models.Cookie
+ 
+@{
+    ViewData["Title"] = "Cookie Tracker";
+}
+
+<div>
+    <p> You have visited this page @Html.DisplayFor(cookie => cookie.Visits) times. </p>
+    <p> Your IP Address is @Html.DisplayFor(cookie => cookie.IPAddress) </p>
+    <p id="timezone"></p>
+</div>
